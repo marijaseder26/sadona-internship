@@ -1,0 +1,16 @@
+{
+    "name": "gulp-scss-compiler",
+    "version": "1.0.0",
+    "description": "A Gulp setup for watching and compiling SCSS to CSS",
+    "main": "gulpfile.js",
+    "scripts": {
+        "start": "gulp"
+    },
+    "author": "Marija",
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-sass": "^5.1.0",
+        "sass": "^1.66.1"
+    }
+}
