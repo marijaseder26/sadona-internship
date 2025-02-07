@@ -85,6 +85,18 @@ header {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .menu-left {
+        display: none;
+    }
+    .header-image {
+        width: 100%;
+    }
+    .menu-right {
+        display: none;
+    }
+}
+
 //home-hero
 .home-hero-slider:not(.slick-initialized) .home-hero-slide:not(:first-child) {
     display: none;
@@ -98,7 +110,7 @@ header {
     background-image: url("../images/homehero.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position: center;
 
     h4 {
         font-family: "Cookie", serif;
@@ -119,7 +131,7 @@ header {
     }
 
     .home-hero-text {
-        padding: 315px 0 344px 0;
+        padding: 218px 0 344px 0;
     }
 
 
@@ -144,7 +156,7 @@ header {
 
 .slider-controls {
     position: absolute;
-    bottom: 0px;
+    bottom: 80px;
     left: 100px;
 
     display: flex;
@@ -210,6 +222,55 @@ header {
     position: absolute;
     top: 11%;
     left: 20%;
+}
+
+.list1 {
+    position: absolute;
+    top: 22%;
+    left: 38%;
+}
+
+.cvet2 {
+    position: absolute;
+    top: 25%;
+    left: 51%;
+}
+
+.cvet3 {
+    position: absolute;
+    bottom: 24%;
+    left: 30%;
+}
+
+.list2 {
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+}
+
+.list3 {
+    position: absolute;
+    bottom: 10%;
+    left: 24%;
+}
+
+@media screen and (max-width: 1200px) {
+    .home-hero-slide .home-hero-text {
+        padding: 218px 25px 344px 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-hero-slide h2 {
+        font-size: 40px;
+    }
+
+    .slider-controls {
+        width: 90%;
+        .slick-dots {
+            gap: 10px;
+        }
+    }
 }
 
 // safety
@@ -354,6 +415,33 @@ header {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .salon-wrapper .salon-text {
+        padding: 0 25px;
+    }
+
+    .salon-wrapper .link {
+        left: 46%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .salon-wrapper {
+        .salon-image-big {
+            left: 0;
+            right: unset;
+            overflow: hidden;
+            width: 100%;
+        }
+        .salon-image-small {
+            display: none;
+        }
+        .salon-text {
+            padding: 0 25px 34px 25px;
+        }
+    }
+}
+
 //spa
 
 .spa-wrapper {
@@ -450,6 +538,18 @@ header {
         color:#E7D1A7;
     }  
 
+}
+
+@media screen and (max-width: 1200px) {
+    .spa-wrapper {
+        background-size: cover;
+        background-position-x: center;
+        margin-top: 160px;
+
+        .spa-text {
+            padding: 80px 25px 40px 25px;
+        }
+    }
 }
 
 // bridal
@@ -591,6 +691,27 @@ header {
             border-radius: 0 100px 0 100px;
             max-width: 552px;
             display: block;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .salt-wrapper {
+        .salt-text {
+            padding: 0 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .salt-wrapper {
+        .salt-text {
+            width: 100%;
+            padding: 25px 25px 0 25px;
+        }
+        .salt-image {
+            width: 100%;
         }
     }
 }
@@ -656,6 +777,20 @@ header {
         object-fit: cover;
         }
        
+@media screen and (max-width: 1200px) {
+    .cezanne-wrapper .line {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-inner .link {
+        left: 40px;
+        bottom: 30px;
+    }    
+}
+
+
 
 // product
 
@@ -748,6 +883,7 @@ header {
         img {
             display: block;
             border-radius: 0 100px;
+            width: 100%;
         }
     }
 
@@ -868,6 +1004,25 @@ header {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .faqs-wrapper {
+        .faqs-top {
+            padding: 0 25px;
+        }
+        .faqs-text {
+            padding: 0 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .faqs-text {
+        h2 {
+            margin-bottom: 25px;
+        }
+    }
+}
+
 // news
 
 .news-wrapper {
@@ -879,6 +1034,10 @@ header {
         font-size: 50px;
         color: #803E38;
         text-align: center;
+
+        h2 {
+            font-size: 50px;
+        }
     }
 
     .news-items {
@@ -981,6 +1140,28 @@ header {
     
 }
 
+@media screen and (max-width: 1200px) {
+    .news-wrapper {
+        padding: 80px 25px;
+
+        .news-items {
+            gap: 25px;
+        }
+
+        .card {
+            max-width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-wrapper {
+        .card {
+            max-width: 100%;
+        }
+    }
+}
+
 // cta
 
 .cta-wrapper {
@@ -1007,6 +1188,24 @@ header {
         color: #803E38;
         font-size: 30px;
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cta-wrapper {
+        .cta-text {
+            padding: 0 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cta-wrapper {
+        .cta-text {
+            h2 {
+                margin-bottom: 25px;
+            }
+        }
     }
 }
 
@@ -1195,6 +1394,55 @@ header {
         padding-bottom: 50px;
     }
 
+@media screen and (max-width: 1200px) {
+    footer {
+        .footer-main {
+            padding: 0 25px;
+        }
+        .footer-bottom {
+            padding: 0 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        .footer-logo {
+            text-align: center;
+        }
+        .footer-text {
+            text-align: center;
+        }
+        .footer-col1 {
+            max-width: 100%;
+        }
+        .footer-col2 {
+            max-width: 100%;
+        }
+
+        .contact-info {
+            max-width: 100%;
+        }
+        .hours {
+            max-width: 100%;
+            .hours-text {
+                justify-content: center;
+                padding-left: 0;
+            }
+            .days {
+                margin: auto;
+            }
+        }
+        .social-wrap {
+            max-width: 100%;
+        }
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
 //copyright
 
 .copyright-wrapper {
@@ -1214,11 +1462,3 @@ header {
         font-size: 12px;
     }
 }
-
-
-
-
-
-
-
-
