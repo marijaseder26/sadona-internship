@@ -26,6 +26,16 @@ h1, h2, h3, h4, h5, h6 {
         background-color: #483224;
         border-radius: 20px 0 20px 0;
         padding: 10px 20px;
+
+        transition: 500ms all;
+    }
+
+    &:hover {
+        border: 2px solid #803E38;
+        span {
+            border-radius: 0;
+            background-color: #803E38;
+        }
     }
 }
 
@@ -78,6 +88,10 @@ header {
 //home-hero
 .home-hero-slider:not(.slick-initialized) .home-hero-slide:not(:first-child) {
     display: none;
+}
+
+.home-hero-wrapper {
+    position: relative;
 }
 
 .home-hero-slide {
@@ -175,6 +189,11 @@ header {
             cursor: pointer;
 
             width: 50px;
+
+            &:hover {
+                border-top: 2px solid #803E38; 
+                color: #803E38;
+            }
         }
     }
 
@@ -185,6 +204,12 @@ header {
       .slick-dots li:nth-child(n + 10) button::before {
         content: none;
       }
+}
+
+.cvet1 {
+    position: absolute;
+    top: 11%;
+    left: 20%;
 }
 
 // safety
@@ -313,6 +338,20 @@ header {
         border-radius: 50px 0 50px 0;
     }
     }
+
+    .read-more { 
+        font-family: "Barlow", serif;
+        font-size: 12px;
+        text-decoration: none;
+        color:#A4554E; 
+        }  
+
+    .link {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 //spa
@@ -322,18 +361,29 @@ header {
     margin-top: 100px;
     background-repeat: no-repeat;
     background-position-x: right;
-    background-color: darkred;
+    background-color: #803E38;
+    background-size: contain;
     .spa-inner {
         position: relative;
 
+        &::before {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            background-color: #803E38;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -100%;
+        }
     }
 
     .spa-text {
         max-width: 360px;
         z-index: 2;
         position: relative;
-        padding: 80px 0;
-        background-color: darkred;
+        padding: 80px 0 40px 0;
+        background-color: #803E38;
         border-radius: 0 200px 0 0;
     }
     .spa-top {
@@ -379,7 +429,26 @@ header {
             color: #483224;
             background-color: #D1C1A5;
         }
+
+        &:hover {
+            span {
+                color: #fff;
+            }
+
+        }
     }
+
+    .link {
+        margin-top: 80px;
+        display: block;
+    }
+
+    .read-more { 
+        font-family: "Barlow", serif;
+        font-size: 12px;
+        text-decoration: none;
+        color:#E7D1A7;
+    }  
 
 }
 
@@ -395,13 +464,15 @@ header {
         justify-content: right;
         background-image: url("../images/woman-bride.png");
         border-radius: 0 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .bridal-text {
-        max-width: 360px;
+        max-width: 400px;
         z-index: 2;
         position: relative;
-        padding: 80px 40px;
+        padding: 80px 40px 40px 40px;
         background-color: rgba(255, 255, 255, 0.41);
         border-radius: 0px 200px 0px 0px;
     }
@@ -441,6 +512,18 @@ header {
         padding-bottom: 20px;
         margin: 0;
     }
+
+    .link {
+        margin-top: 80px;
+        display: block;
+    }
+
+    .read-more { 
+        font-family: "Barlow", serif;
+        font-size: 12px;
+        text-decoration: none;
+        color:#803E38;
+    }  
 
 }
 
@@ -561,7 +644,7 @@ header {
         padding-right: 20px;
     }
     
-    .product-description {
+    .product-description, .product-description-hover {
         font-size: 18px;
         color: #6b2f1d;
         margin-bottom: 15px;
@@ -574,7 +657,79 @@ header {
         }
        
 
-// cezanne
+// product
+
+.product-wrapper {
+
+    .product-description {
+        display: flex;
+    }
+
+    .product-description-hover {
+        display: none!important;
+    }
+
+    .product-top-img {
+        display: block;
+    }
+
+    .product-top-img-hover {
+        display: none;
+    }
+
+    .link-arrow {
+        display: inline;
+    }
+
+    .link-arrow-hover {
+        display: none;
+    }
+
+    &:hover {
+        .product-inner {
+            background-color: #D1C1A5;
+        }
+
+        .product-top-img {
+            display: none;
+        }
+    
+        .product-top-img-hover {
+            display: block;
+        }
+
+        .product-top {
+            h4 {
+                color: #803E38;
+            }
+        }
+
+        h2 {
+            color: #803E38;
+        }
+
+        .read-more {
+            color: #803E38; 
+        }
+
+        .product-description {
+            display: none;
+        }
+    
+        .product-description-hover {
+            display: flex!important;
+        }
+
+        .link-arrow {
+            display: none;
+        }
+    
+        .link-arrow-hover {
+            display: inline;
+        }
+
+    }
+}
 
 .product-inner {
     background-color: #803E38;
@@ -584,6 +739,7 @@ header {
     .product-main {
         width: 50%;
         padding: 40px;
+        position: relative;
     }
 
     .product-image {
@@ -603,10 +759,9 @@ header {
 
     }
 
-    .product-description {
-        max-width: 360px;
+    .product-description, .product-description-hover {
+        max-width: 512px;
         position: relative;
-        width: 50%;
         display: flex;
         align-content: center;
         flex-wrap: wrap;
@@ -647,7 +802,21 @@ header {
         padding-bottom: 20px;
         margin: 0;
     }
-}
+
+    .link {
+    position: absolute;
+    right: 41px;
+    bottom: 40px;
+    }
+
+    }
+    .read-more { 
+        font-family: "Barlow", serif;
+        font-size: 12px;
+        text-decoration: none;
+        color:#D1C1A5; 
+    }  
+
 
 // faqs
 
@@ -735,6 +904,13 @@ header {
         max-width: 357px;
         overflow: hidden;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+        transition: 300ms all;
+
+        &:hover {
+            margin-top: -30px;
+            margin-bottom: 30px;
+        }
     }
 
     .news-box {
@@ -843,7 +1019,13 @@ header {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: space-between;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
     }
+
     .footer-col1 {
         max-width: 33%;
     }
@@ -854,6 +1036,7 @@ header {
         flex-wrap: wrap;
         max-width: 66%;
         margin-top: 100px;
+        justify-content: space-evenly;
     }
 
     .footer-content {
@@ -874,11 +1057,27 @@ header {
         font-size: 16px;
         max-width: 33%;
 
+        p {
+            margin: 0;
+            margin-bottom: 26px;
+
+            display: flex;
+        }
+
         a {
             text-decoration: none;
             font-family: "Barlow", serif;
             color: #483224;
             font-size: 16px;
+        }
+
+        img {
+            margin-top: 3px;
+            margin-right: 10px;
+        }
+
+        span {
+            max-width: 140px;
         }
     }
 
@@ -895,7 +1094,7 @@ header {
     .hours-text {
         display: flex;
         width: 100%;
-        padding-left: 30px;
+        padding-left: 10px;
 
         img {
             width: 17px;
@@ -916,8 +1115,12 @@ header {
                 font-family: "Barlow", serif;
                 font-size: 16px;
                 list-style: none;
+                min-width: 220px;
+                margin-bottom: 10px;
             }
         }
+        padding-right: 33px;
+        max-width: 234px;
     }
 
     .social-wrap {
@@ -932,6 +1135,25 @@ header {
             margin: 0;
         }
     }
+
+    .social-link1 {
+            img {
+               width: 9px; 
+               height: 17px;
+               padding-top: 20px;
+               padding-right: 20px;
+            }
+        }
+    }
+
+    .social-link2 {
+        img {
+           width: 17px; 
+           height: 17px;
+           padding-top: 20px;
+        }
+    }
+
 
     .wrap1-title {
         h4 {
@@ -970,8 +1192,31 @@ header {
     .footer-bottom {
         display: flex;
         flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+
+//copyright
+
+.copyright-wrapper {
+    background-color: #803E38;
+    width: 100%;
+
+    .copyright-text {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    p {
+        font-family: "Prata", serif;
+        color: #FFFFFF;
+        font-size: 12px;
     }
 }
+
+
+
 
 
 
