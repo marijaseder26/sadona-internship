@@ -190,43 +190,48 @@ header {
 
 .cvet1 {
   position: absolute;
-  top: 11%;
+  top: 7%;
   left: 20%;
 }
 
 .list1 {
   position: absolute;
-  top: 22%;
+  top: 16%;
   left: 38%;
 }
 
 .cvet2 {
   position: absolute;
-  top: 25%;
-  left: 51%;
+  top: 12%;
+  left: 54%;
 }
 
 .cvet3 {
   position: absolute;
-  bottom: 24%;
-  left: 30%;
+  bottom: 26%;
+  left: 33%;
 }
 
 .list2 {
   position: absolute;
-  bottom: 30%;
+  bottom: 32%;
   right: 10%;
 }
 
 .list3 {
   position: absolute;
   bottom: 10%;
-  left: 24%;
+  left: 25%;
 }
 
 @media screen and (max-width: 1200px) {
   .home-hero-slide .home-hero-text {
     padding: 218px 25px 344px 25px;
+  }
+  .list3 {
+    position: absolute;
+    bottom: 15%;
+    left: 6%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -241,6 +246,7 @@ header {
   }
 }
 .safety-wrapper {
+  position: relative;
   background-color: #D1C1A5;
   text-align: center;
   padding: 40px;
@@ -260,8 +266,19 @@ header {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+.safety-wrapper .list4 {
+  position: absolute;
+  top: 8%;
+  left: 30%;
+}
+.safety-wrapper .list5 {
+  position: absolute;
+  top: 8%;
+  right: 29%;
+}
 
 .story-wrapper {
+  position: relative;
   text-align: center;
   padding: 40px;
 }
@@ -289,8 +306,19 @@ header {
   margin: auto;
   margin-top: 40px;
 }
+.story-wrapper .cvet4 {
+  position: absolute;
+  top: -22%;
+  right: 32%;
+}
+.story-wrapper .list6 {
+  position: absolute;
+  bottom: -5%;
+  right: 28%;
+}
 
 .salon-wrapper {
+  position: relative;
   margin-top: 100px;
 }
 .salon-wrapper .salon-inner {
@@ -362,6 +390,17 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
+.salon-wrapper .cvet5 {
+  position: absolute;
+  top: -24%;
+  left: 32%;
+  z-index: 4;
+}
+.salon-wrapper .list7 {
+  position: absolute;
+  bottom: -47%;
+  left: 35%;
+}
 
 @media screen and (max-width: 1200px) {
   .salon-wrapper .salon-text {
@@ -386,8 +425,9 @@ header {
   }
 }
 .spa-wrapper {
+  position: relative;
   background-image: url("../images/massage.png");
-  margin-top: 100px;
+  margin-top: 150px;
   background-repeat: no-repeat;
   background-position-x: right;
   background-color: #803E38;
@@ -407,7 +447,7 @@ header {
   left: -100%;
 }
 .spa-wrapper .spa-text {
-  max-width: 360px;
+  max-width: 470px;
   z-index: 2;
   position: relative;
   padding: 80px 0 40px 0;
@@ -464,6 +504,18 @@ header {
   text-decoration: none;
   color: #E7D1A7;
 }
+.spa-wrapper .cvet6 {
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
+  z-index: 4;
+}
+.spa-wrapper .list8 {
+  position: absolute;
+  bottom: -2%;
+  right: 38%;
+  z-index: 4;
+}
 
 @media screen and (max-width: 1200px) {
   .spa-wrapper {
@@ -476,6 +528,7 @@ header {
   }
 }
 .bridal-wrapper {
+  position: relative;
   margin-top: 100px;
 }
 .bridal-wrapper .bridal-inner {
@@ -536,8 +589,27 @@ header {
   text-decoration: none;
   color: #803E38;
 }
+.bridal-wrapper .cvet7 {
+  position: absolute;
+  top: -10%;
+  right: 20%;
+  z-index: 3;
+}
+.bridal-wrapper .list9 {
+  position: absolute;
+  top: 30%;
+  left: 28%;
+  z-index: 4;
+}
+.bridal-wrapper .list10 {
+  position: absolute;
+  bottom: 8%;
+  right: 25%;
+  z-index: 4;
+}
 
 .salt-wrapper {
+  position: relative;
   background-color: #D1C1A5;
   margin-top: 100px;
 }
@@ -548,7 +620,7 @@ header {
   justify-content: space-between;
 }
 .salt-wrapper .salt-text {
-  max-width: 360px;
+  max-width: 520px;
   position: relative;
   width: 50%;
   display: flex;
@@ -595,10 +667,21 @@ header {
   display: block;
   width: 100%;
 }
+.salt-wrapper .cvet8 {
+  position: absolute;
+  top: -2%;
+  left: 36%;
+}
+.salt-wrapper .list11 {
+  position: absolute;
+  bottom: -5%;
+  left: 42%;
+}
 
 @media screen and (max-width: 1200px) {
   .salt-wrapper .salt-text {
     padding: 0 25px;
+    max-width: 360px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -611,6 +694,7 @@ header {
   }
 }
 .cezanne-wrapper {
+  position: relative;
   text-align: center;
   padding: 40px;
 }
@@ -663,6 +747,18 @@ header {
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
+}
+
+.cvet9 {
+  position: absolute;
+  top: -2%;
+  right: 27%;
+}
+
+.list12 {
+  position: absolute;
+  bottom: 2%;
+  left: 25%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -801,6 +897,7 @@ header {
 }
 
 .faqs-wrapper {
+  position: relative;
   background-color: #F3F3F3;
   margin-top: 100px;
   padding: 40px 0;
@@ -841,6 +938,16 @@ header {
   font-size: 50px;
   margin: 0;
 }
+.faqs-wrapper .cvet10 {
+  position: absolute;
+  top: -22%;
+  right: 32%;
+}
+.faqs-wrapper .list13 {
+  position: absolute;
+  bottom: -7%;
+  right: 40%;
+}
 
 @media screen and (max-width: 1200px) {
   .faqs-wrapper .faqs-top {
@@ -856,6 +963,7 @@ header {
   }
 }
 .news-wrapper {
+  position: relative;
   background-color: #D1C1A5;
   padding: 80px;
 }
@@ -1004,6 +1112,11 @@ header {
 .news-wrapper .link img {
   padding-left: 10px;
 }
+.news-wrapper .cvet11 {
+  position: absolute;
+  top: -2%;
+  left: 24%;
+}
 
 @media screen and (max-width: 1200px) {
   .news-wrapper {
@@ -1056,6 +1169,7 @@ header {
   }
 }
 .footer {
+  position: relative;
   background-color: #F3F3F3;
 }
 .footer .footer-main {
@@ -1201,6 +1315,24 @@ header {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 50px;
+}
+
+.list14 {
+  position: absolute;
+  top: 5%;
+  left: 35%;
+}
+
+.cvet12 {
+  position: absolute;
+  top: -8%;
+  right: 26%;
+}
+
+.list15 {
+  position: absolute;
+  bottom: 24%;
+  right: 32%;
 }
 
 @media screen and (max-width: 1200px) {

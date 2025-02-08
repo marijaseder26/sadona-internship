@@ -26,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
         background-color: #483224;
         border-radius: 20px 0 20px 0;
         padding: 10px 20px;
-
         transition: 500ms all;
     }
 
@@ -40,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // header
+
 header {
     background-color: #803E38;
 }
@@ -98,6 +98,7 @@ header {
 }
 
 //home-hero
+
 .home-hero-slider:not(.slick-initialized) .home-hero-slide:not(:first-child) {
     display: none;
 }
@@ -220,43 +221,49 @@ header {
 
 .cvet1 {
     position: absolute;
-    top: 11%;
+    top: 7%;
     left: 20%;
 }
 
 .list1 {
     position: absolute;
-    top: 22%;
+    top: 16%;
     left: 38%;
 }
 
 .cvet2 {
     position: absolute;
-    top: 25%;
-    left: 51%;
+    top: 12%;
+    left: 54%;
 }
 
 .cvet3 {
     position: absolute;
-    bottom: 24%;
-    left: 30%;
+    bottom: 26%;
+    left: 33%;
 }
 
 .list2 {
     position: absolute;
-    bottom: 30%;
+    bottom: 32%;
     right: 10%;
 }
 
 .list3 {
     position: absolute;
     bottom: 10%;
-    left: 24%;
+    left: 25%;
 }
 
 @media screen and (max-width: 1200px) {
     .home-hero-slide .home-hero-text {
         padding: 218px 25px 344px 25px;
+    }
+
+    .list3 {
+        position: absolute;
+        bottom: 15%;
+        left: 6%;
     }
 }
 
@@ -275,6 +282,7 @@ header {
 
 // safety
 .safety-wrapper {
+    position: relative;
     background-color: #D1C1A5;
     text-align: center;
     padding: 40px;
@@ -295,10 +303,23 @@ header {
         margin-top: 10px;
         margin-bottom: 20px;
     }
+
+    .list4 {
+        position: absolute;
+        top: 8%;
+        left: 30%;
+    }
+
+    .list5 {
+        position: absolute;
+        top: 8%;
+        right: 29%;
+    }
 }
 
 // story
 .story-wrapper {
+    position: relative;
     text-align: center;
     padding: 40px;
 
@@ -328,11 +349,24 @@ header {
         margin: auto;
         margin-top: 40px;
     }
+
+    .cvet4 {
+        position: absolute;
+        top: -22%;
+        right: 32%;
+    }
+    .list6 {
+        position: absolute;
+        bottom: -5%;
+        right: 28%;
+    }
+
 }
 
 //salon
 
 .salon-wrapper {
+    position: relative;
     margin-top: 100px;
     .salon-inner {
         position: relative;
@@ -413,6 +447,19 @@ header {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    .cvet5 {
+        position: absolute;
+        top: -24%;
+        left: 32%;
+        z-index: 4;
+    }
+
+    .list7 {
+        position: absolute;
+        bottom: -47%;
+        left: 35%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -445,8 +492,9 @@ header {
 //spa
 
 .spa-wrapper {
+    position: relative;
     background-image: url('../images/massage.png');
-    margin-top: 100px;
+    margin-top: 150px;
     background-repeat: no-repeat;
     background-position-x: right;
     background-color: #803E38;
@@ -467,7 +515,7 @@ header {
     }
 
     .spa-text {
-        max-width: 360px;
+        max-width: 470px;
         z-index: 2;
         position: relative;
         padding: 80px 0 40px 0;
@@ -536,7 +584,21 @@ header {
         font-size: 12px;
         text-decoration: none;
         color:#E7D1A7;
-    }  
+    }
+
+    .cvet6 {
+        position: absolute;
+        bottom: 5%;
+        left: 40%;
+        z-index: 4;
+    }
+
+    .list8 {
+        position: absolute;
+        bottom: -2%;
+        right: 38%;
+        z-index: 4;
+    }
 
 }
 
@@ -555,6 +617,7 @@ header {
 // bridal
 
 .bridal-wrapper {
+    position: relative;
     margin-top: 100px;
 
     .bridal-inner {
@@ -625,11 +688,33 @@ header {
         color:#803E38;
     }  
 
+    .cvet7 {
+        position: absolute;
+        top: -10%;
+        right: 20%;
+        z-index: 3;
+    }
+
+    .list9 {
+        position: absolute;
+        top: 30%;
+        left: 28%;
+        z-index: 4;
+    }
+
+    .list10 {
+        position: absolute;
+        bottom: 8%;
+        right: 25%;
+        z-index: 4;
+    }
+
 }
 
 //salt
 
 .salt-wrapper {
+    position: relative;
     background-color: #D1C1A5;
     margin-top: 100px;
     .salt-inner {
@@ -641,7 +726,7 @@ header {
     }
 
     .salt-text {
-        max-width: 360px;
+        max-width: 520px;
         position: relative;
         width: 50%;
         display: flex;
@@ -694,12 +779,25 @@ header {
             width: 100%;
         }
     }
+
+    .cvet8 {
+        position: absolute;
+        top: -2%;
+        left: 36%;
+    }
+
+    .list11 {
+        position: absolute;
+        bottom: -5%;
+        left: 42%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     .salt-wrapper {
         .salt-text {
             padding: 0 25px;
+            max-width: 360px;
         }
     }
 }
@@ -719,6 +817,7 @@ header {
 // cezzane
 
 .cezanne-wrapper {
+    position: relative;
     text-align: center;
     padding: 40px;
 
@@ -775,7 +874,19 @@ header {
         width: 100%;
         border-radius: 10px;
         object-fit: cover;
-        }
+    }
+
+    .cvet9 {
+        position: absolute;
+        top: -2%;
+        right: 27%;
+    }
+
+    .list12 {
+        position: absolute;
+        bottom: 2%;
+        left: 25%;
+    }
        
 @media screen and (max-width: 1200px) {
     .cezanne-wrapper .line {
@@ -957,6 +1068,7 @@ header {
 // faqs
 
 .faqs-wrapper {
+    position: relative;
     background-color: #F3F3F3;
     margin-top: 100px;
     padding: 40px 0;
@@ -1002,6 +1114,18 @@ header {
         font-size: 50px;
         margin: 0;
     }
+
+    .cvet10 {
+        position: absolute;
+        top: -22%;
+        right: 32%;
+    }
+
+    .list13 {
+        position: absolute;
+        bottom: -7%;
+        right: 40%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1026,6 +1150,7 @@ header {
 // news
 
 .news-wrapper {
+    position: relative;
     background-color: #D1C1A5;
     padding: 80px;
 
@@ -1200,6 +1325,12 @@ header {
             padding-left: 10px;
         }
     }
+
+    .cvet11 {
+        position: absolute;
+        top: -2%;
+        left: 24%;
+    }
     
 }
 
@@ -1275,6 +1406,7 @@ header {
 // footer
 
 .footer {
+    position: relative;
     background-color: #F3F3F3;
 
     .footer-main {
@@ -1455,6 +1587,24 @@ header {
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 50px;
+    }
+
+    .list14 {
+        position: absolute;
+        top: 5%;
+        left: 35%;
+    }
+
+    .cvet12 {
+        position: absolute;
+        top: -8%;
+        right: 26%;
+    }
+
+    .list15 {
+        position: absolute;
+        bottom: 24%;
+        right: 32%;
     }
 
 @media screen and (max-width: 1200px) {
