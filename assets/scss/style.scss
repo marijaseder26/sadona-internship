@@ -370,6 +370,46 @@ header {
 
 }
 
+@media screen and (max-width: 1200px) {
+    .safety-wrapper .list4 {
+        position: absolute;
+        top: 8%;
+        left: 18%;
+    }
+
+    .story-wrapper .cvet4 {
+        position: absolute;
+        top: -22%;
+        right: 26%;
+    }
+
+    .safety-wrapper .list5 {
+        position: absolute;
+        top: 2%;
+        right: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .safety-wrapper .list4 {
+        position: absolute;
+        top: -5%;
+        left: -3%;
+    }
+
+    .safety-wrapper .list5 {
+        position: absolute;
+        top: 46%;
+        right: 5%;
+    }
+
+    .story-wrapper .cvet4 {
+        position: absolute;
+        top: -14%;
+        right: 55%;
+    }
+}
+
 //salon
 .salon-wrapper {
     position: relative;
@@ -1160,6 +1200,12 @@ header {
             margin-bottom: 25px;
         }
     }
+
+    .faqs-wrapper .list13 {
+        position: absolute;
+        bottom: -7%;
+        right: 8%;
+    }
 }
 
 // news
@@ -1379,6 +1425,12 @@ header {
         .card {
             max-width: 100%;
         }
+    }
+
+    .news-wrapper .cvet11 {
+        position: absolute;
+        top: -1%;
+        left: 1%;
     }
 }
 
@@ -1688,6 +1740,18 @@ header {
 
     .footer-bottom {
         text-align: center;
+    }
+
+    .cvet12 {
+        position: absolute;
+        top: -8%;
+        right: -2%;
+    }
+
+    .list14 {
+        position: absolute;
+        top: 22%;
+        left: 17%;
     }
 }
 
