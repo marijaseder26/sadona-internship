@@ -3,7 +3,12 @@ body {
   margin: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -123,7 +128,8 @@ header {
   padding: 218px 0 344px 0;
 }
 
-.slide-m-prev, .slide-m-next {
+.slide-m-prev,
+.slide-m-next {
   padding: 2px 4px;
   border: 1px solid white;
   border-radius: 50px;
@@ -131,7 +137,8 @@ header {
   height: 15px;
   cursor: pointer;
 }
-.slide-m-prev img, .slide-m-next img {
+.slide-m-prev img,
+.slide-m-next img {
   width: 10px;
   height: 10px;
   display: block;
@@ -737,7 +744,8 @@ header {
   padding-right: 20px;
 }
 
-.product-description, .product-description-hover {
+.product-description,
+.product-description-hover {
   font-size: 18px;
   color: #6b2f1d;
   margin-bottom: 15px;
@@ -845,7 +853,8 @@ header {
   position: relative;
   justify-content: space-between;
 }
-.product-inner .product-description, .product-inner .product-description-hover {
+.product-inner .product-description,
+.product-inner .product-description-hover {
   max-width: 512px;
   position: relative;
   display: flex;
