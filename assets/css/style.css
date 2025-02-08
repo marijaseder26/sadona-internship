@@ -879,6 +879,12 @@ header {
   flex-wrap: wrap;
   align-items: center;
 }
+.news-wrapper .news-top .news-top-image {
+  display: block;
+}
+.news-wrapper .news-top .news-top-image-hover {
+  display: none;
+}
 .news-wrapper .news-top img {
   width: 16px;
   height: 18px;
@@ -891,12 +897,56 @@ header {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: 300ms all;
 }
+.news-wrapper .card .link-image {
+  display: block;
+}
+.news-wrapper .card .link-image-hover {
+  display: none;
+}
 .news-wrapper .card:hover {
   margin-top: -30px;
   margin-bottom: 30px;
 }
+.news-wrapper .card:hover .news-box {
+  background-color: #803E38;
+}
+.news-wrapper .card:hover h4 {
+  color: #D1C1A5;
+}
+.news-wrapper .card:hover h2 {
+  color: #FFFFFF;
+}
+.news-wrapper .card:hover p {
+  color: #FFFFFF;
+}
+.news-wrapper .card:hover .description p {
+  color: #FFFFFF;
+}
+.news-wrapper .card:hover .dateandtime {
+  color: #D1C1A5;
+}
+.news-wrapper .card:hover .line {
+  background-color: #D1C1A5;
+}
+.news-wrapper .card:hover a {
+  color: #D1C1A5;
+}
+.news-wrapper .card:hover .news-top-image {
+  display: none;
+}
+.news-wrapper .card:hover .news-top-image-hover {
+  display: block;
+}
+.news-wrapper .card:hover .link-image {
+  display: none;
+}
+.news-wrapper .card:hover .link-image-hover {
+  display: block;
+}
 .news-wrapper .news-box {
   padding: 36px;
+  height: 100%;
+  overflow: hidden;
 }
 .news-wrapper h4 {
   font-family: "Cookie", serif;
@@ -909,6 +959,9 @@ header {
   font-size: 30px;
   color: #483224;
   padding: 16px 0 20px 0;
+}
+.news-wrapper .news-image img {
+  display: block;
 }
 .news-wrapper .dateandtime {
   display: flex;
